@@ -1,0 +1,19 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+header {
+  display: flex;
+  justify-content: space-between;
+  
+  a:hover {
+    text-decoration: none;
+  }
+
+  ul {
+    align-items: center;
+    display: flex;
+    margin-bottom: 0;
+  }
+}

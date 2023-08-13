@@ -5,7 +5,23 @@ layout: default
 {{page.date | date: "%-d %B %Y, %R"}}
 
 <h1>{{page.title}}</h1>
-
+<div class="post-tags">
+  {% for tag in page.tags %}
+    <span>
+    {{ tag }}
+    </span>
+  {% endfor %}
+</div>
 <div>
   {{ content }}
 </div>
+
+{% if page.repo_url %}
+
+<hr class="repo-break" />
+
+<div class="repo-container">
+  <strong>You can access a repository with a working example of the above content <a href="{{page.repo_url}}" target="_blank">here</a>.</strong>
+</div>
+
+{% endif %}

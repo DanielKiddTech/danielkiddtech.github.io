@@ -3,6 +3,7 @@ layout: post
 title:  "Next JS Hydration Issues"
 date:  2022-08-27 15:08
 categories: NextJS
+tags: NextJS React
 ---
 
 In the past I was working on a NextJS site and after some time I have noticed some console errors being logged referring to NextJS hydration issues. This did not have any detrimental effect on the site, but I thought it was worth some investigation.
@@ -53,7 +54,7 @@ I was using moment to render the date/time, which looked like:
 
 {% endhighlight %}
 
-To allow me to disable Server-Side rendering I changed to using the react-moment component **<Moment>**. I imported it as follows:
+To allow me to disable Server-Side rendering I changed to using the react-moment component **&lt;Moment&gt;**. I imported it as follows:
 
 {% highlight javascript %}
 

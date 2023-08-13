@@ -15,6 +15,13 @@ layout: default
     <p class="post-text">
       {{ post.excerpt }}
     </p>
+    <div class="post-tags">
+      {% for tag in post.tags %}
+        <span>
+        {{ tag }}
+        </span>
+      {% endfor %}
+    </div>
     <p>
     {{ post.date | date: "%-d %B %Y" }}
     </p>
